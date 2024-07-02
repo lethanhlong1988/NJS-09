@@ -37,6 +37,7 @@ module.exports = class Product {
     this.id = Math.random().toString();
     getProductsFromFile((products) => {
       const inputProduct = {
+        id: this.id,
         title: this.title,
         imageUrl: this.imageUrl,
         price: this.price,
